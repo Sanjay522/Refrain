@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors */
+  --color-text-white: #ffffff;
+  --color-text-red: #ff4c4c;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-2xl: 2rem;     /* 32px */
+}
+
+body{
+  background-color: #0c0c0c;
+  color: white;
+}
+
+/* Colors */
+.text-white {
+  color: var(--color-text-white);
+}
+
+.text-red {
+  color: var(--color-text-red);
+}
+.bg-red{
+  background-color:  var(--color-text-red);
+}
+
+/* Font Sizes */
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+
+.text-sm{
+  font-size: var(--font-size-sm);
+}
+
+.text-base {
+  font-size: var(--font-size-base);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+
+.text-2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.bg-img {
+  background-image: url("assets/bgimage.png");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.artist-bg{
+  background-image: url("assets/eminembg.png");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.bg-test{
+
+  
+  background-image: url(assets/example.png);
+  background-size: cover;
+  background-position: center;
+}
