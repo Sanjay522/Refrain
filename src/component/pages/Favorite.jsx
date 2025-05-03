@@ -1,13 +1,14 @@
 import React from "react";
 import PlayAll from "../button/PlayAll";
 import SongLine from "../SongLine";
+import { NavLink } from "react-router-dom";
 
 const Favorite = () => {
   return (
     <div className="flex  flex-col lg:flex-row sm:m-0 m-5 pr-1 sm:px-10">
       <div
         className="bg-gradient-to-r from-red-300 
-       via-red-600  to-red-900 w-full rounded-lg "
+       via-red-600  to-red-900 w-full rounded-lg min-h-screen "
       >
         <div className="  flex justify-between items-end p-2 sm:flex sm:justify-between sm:pr-10 sm:items-end  ">
           <div className=" flex px-6 py-10 sm:flex  sm:ustify-between sm:p-10">

@@ -39,7 +39,7 @@ const Nav2 = () => {
       </div>
 
       <div className="sm:hidden fixed top-0 left-0 w-full bg-black text-white z-50">
-        <div className="flex justify-between items-center px-4 py-3">
+        <div className={`flex justify-between items-center px-4 py-3${!open ? "":" flex justify-end items-center"}`}>
           {!open && (
             <p className="text-sm text-gray-400 px-5">🔍 Search</p>
           )}
@@ -49,9 +49,9 @@ const Nav2 = () => {
 
           <button
             onClick={toggleMenu}
-            className="text-white text-xl font-bold"
+            className="text-red-500 text-xl font-bold"
           >
-            {open ? "╳" : "☰Menu"}
+            {open ? "╳" : "Menu ☰"} 
           </button>
         </div>
 

@@ -26,8 +26,8 @@ const AppRoutes = () => {
       element: <ArtistPage />,
     },
     {
-      path: "/favorites",
-      element: <Favorite />,
+      path: "/favorite",
+      element: <Favorite/>,
     },
     {
       path: "/song/:id",

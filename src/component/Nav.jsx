@@ -47,7 +47,6 @@ const navItems = [
   {
     title: "General",
     links: [
-      { icon: setting, label: "Setting" },
       {
         icon: logout,
         label: "Logout",

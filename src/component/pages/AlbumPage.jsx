@@ -6,7 +6,7 @@ import SongLine from "../SongLine";
 
 const AlbumPage = () => {
   return (
-    <div className="flex  flex-col lg:flex-row sm:m-0 m-5 pr-1 sm:px-10">
+    <div className="flex  flex-col min-h-screen lg:flex-row sm:m-0 m-5 pr-1 sm:px-10">
       <div
         className="bg-gradient-to-r from-sky-400 
        via-sky-700  to-gray-800 w-full rounded-lg "
