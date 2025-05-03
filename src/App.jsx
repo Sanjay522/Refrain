@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 import Home from "./component/Home";
 import Nav from "./component/Nav";
 import Nav2 from "./component/Nav2";
@@ -17,12 +18,14 @@ import Favorite from "./component/pages/Favorite";
 import DetailPage from "./component/DetailPage";
 import SongLine from "./component/SongLine";
 import Mobileplayer from "./component/Mobileplayer";
+import AppRoutes from "./router/Router";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+    <BrowserRouter>
       <div className=" w-full  m-auto sm:mt-7 flex">
       <div className="fixed sm:top-0 left-0 bottom-22
        w-full bg-black z-50 h-15">
@@ -30,22 +33,15 @@ function App() {
         </div>
         <Nav />
         <div className="flex-grow sm:mt-10 sm:mb-20 mt-12 mb-38  ">
-          {/* <Home /> */}
-          {/* <Discover /> */}
-          {/* <AlbumPage /> */}
-          {/* <ArtistPage /> */}
+          <AppRoutes/>
           <Footer />
-          <Favorite/>
-          <DetailPage playlistName="peace" loggedUserName="sanjay" songCount="sanjay">
-            <SongLine/>
-            </DetailPage>
         </div>
         <div className="fixed sm:bottom-0 left-0 bottom-22 w-full bg-black z-50">
           <Player />
         </div>
-        {/* <Mobileplayer/> */}
         
       </div>
+      </BrowserRouter>
     </>
   );
 }

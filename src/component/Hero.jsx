@@ -3,7 +3,7 @@ import Nav2 from "./Nav2";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="p-2">
 
       <div className=" bg-img  h-[40svh]  sm:h-[80svh] rounded-2xl p-5">
         <div className="mt-15 text-2xl sm:text-5xl sm:mt-30">

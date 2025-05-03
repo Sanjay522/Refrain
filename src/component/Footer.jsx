@@ -22,7 +22,8 @@ const Footer = () => {
 
 const social =["instagra","faceboo","linkedin"]
   return (
-    <footer className="bg-black text-white p-8 mt-10">
+    <footer className="bg-
+     text-white px-5 py-6 mt-10">
     <div className="grid grid-cols-3 sm:grid-cols-5 gap-6">
       {footNav.map((section, index) => (
         <div key={index}>

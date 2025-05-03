@@ -3,7 +3,8 @@ import React from 'react'
 
 const SectionHeader = ({ title, children }) => {
     return (
-      <div className="sm:flex sm:flex-col sm:my-4 my-4">
+      <div className="sm:flex 
+      sm:flex-col sm:my-4 my-4 p-2">
         <div className="flex items-center justify-between">
           <h1 className="text-[26px] font-bold sm:text-3xl sm:font-bold">
             {title}
