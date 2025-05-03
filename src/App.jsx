@@ -42,7 +42,7 @@ function App() {
         <div className="fixed sm:bottom-0 left-0 bottom-22 w-full bg-black z-50">
           <Player />
         </div>
-        <Mobileplayer/>
+        {/* <Mobileplayer/> */}
         
       </div>
     </>
