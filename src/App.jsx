@@ -24,15 +24,16 @@ function App() {
   return (
     <>
       <div className=" w-full  m-auto sm:mt-7 flex">
-      <div className="fixed sm:top-0 left-0 bottom-22 w-full bg-black z-50 h-15">
+      <div className="fixed sm:top-0 left-0 bottom-22
+       w-full bg-black z-50 h-15">
           <Nav2 />
         </div>
         <Nav />
         <div className="flex-grow sm:mt-10 sm:mb-20 mt-12 mb-38  ">
-          <Home />
-          <Discover />
-          <AlbumPage />
-          <ArtistPage />
+          {/* <Home /> */}
+          {/* <Discover /> */}
+          {/* <AlbumPage /> */}
+          {/* <ArtistPage /> */}
           <Footer />
           <Favorite/>
           <DetailPage playlistName="peace" loggedUserName="sanjay" songCount="sanjay">
