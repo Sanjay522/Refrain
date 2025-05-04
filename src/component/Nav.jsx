@@ -9,39 +9,38 @@ import favorite from "../assets/favorite.svg";
 import yourplaylist from "../assets/yourplaylist.svg";
 import addplaylist from "../assets/addplaylist.svg";
 import setting from "../assets/setting.svg";
-import  logout from "../assets/logout.svg";
-import  library from "../assets/library.svg";
-
+import logout from "../assets/logout.svg";
+import library from "../assets/library.svg";
 
 import Line from "./Line";
-import { NavLink ,Link} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navItems = [
   {
     title: "Menu",
-    links: [{ icon: home1, label: "Home",path:"/" }],
+    links: [{ icon: home1, label: "Home", path: "/" }],
   },
   {
     title: "Discover",
     links: [
-      { icon: discover, label: "Discover",path:"/discover" },
-      { icon: album, label: "Album", path:"/album" },
-      { icon: artist, label: "Artist",path:"/artist" },
+      { icon: discover, label: "Discover", path: "/discover" },
+      { icon: album, label: "Album", path: "/album" },
+      { icon: artist, label: "Artist", path: "/artist" },
     ],
   },
   {
     title: "Library",
     links: [
-      { icon: recently, label: "Recently added",path:"/recently added" },
-      { icon: mostplayed, label: "Most played",path:"/most played" },
+      { icon: recently, label: "Recently added", path: "/recently added" },
+      { icon: mostplayed, label: "Most played", path: "/most played" },
     ],
   },
   {
     title: "Playlist & Favorite",
     links: [
-      { icon: favorite, label: "Your favorite",path:"/favorite" },
-      { icon: yourplaylist, label: "Your playlist", path:"/your playlist" },
-      { icon: addplaylist, label: "Add playlist" , path:"/add playlist" },
+      { icon: favorite, label: "Your favorite", path: "/favorite" },
+      { icon: yourplaylist, label: "Your playlist", path: "/your playlist" },
+      { icon: addplaylist, label: "Add playlist", path: "/add playlist" },
     ],
   },
   {
@@ -51,7 +50,7 @@ const navItems = [
         icon: logout,
         label: "Logout",
         className: "text-red-500 hover:text-white fill ",
-        path:"/logout"
+        path: "/logout",
       },
     ],
   },
@@ -60,65 +59,87 @@ const navItems = [
 const Nav = () => {
   return (
     <>
-      <div className="hidden  sm:flex sm:w-[18%] text-white h-full p-6 justify-between relative ">
-        <div className="fixed ">
-          {/* <h1 className="text-red-500 text-4xl font-bold">Refrain</h1> */}
-<div className="">
+      <div className="hidden sm:flex sm:w-[18%] text-white h-full p-6 justify-between relative">
+        <div className="fixed">
           {navItems.map((section, index) => (
-            <div key={index} className="my-2 ">
+            <div key={index} className="my-2">
               <p className="text-xs uppercase mb-2 text-red-500">
                 {section.title}
               </p>
               <div className="space-y-2">
                 {section.links.map((item, i) => (
-                  <NavLink to={item.path}>
-                  <div
-                    key={i}
-                    className={`flex items-center p-2 rounded-md hover:bg-red-500 transition cursor-pointer`}
+                  <NavLink
+                    to={item.path}
+                    key={i} // Move the key to NavLink itself
+                    className={({ isActive }) =>
+                      isActive
+                        ? "flex items-center p-2 rounded-md hover:bg-red-500 bg-red-500 transition cursor-pointer"
+                        : "flex items-center p-2 rounded-md hover:bg-red-500 transition cursor-pointer"
+                    }
                   >
                     <img src={item.icon} alt="" className="h-5 w-5" />
                     <p className={`ml-3 text-sm ${item.className || ""}`}>
                       {item.label}
                     </p>
-                  </div>
                   </NavLink>
                 ))}
               </div>
             </div>
           ))}
-          </div>
-          <Line />
         </div>
+        <Line />
       </div>
 
-      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white p-5 flex justify-around z-50 h-22 ">
-        <NavLink to="/">
-        <div className="flex items-center flex-col">
-          <img src={home1} alt="" className="h-7 w-7" />
-          <p className="text-lg mt-1">Home</p>
-        </div>
-        </NavLink>
-        <NavLink to="/discover">
-        <div className="flex items-center flex-col">
-          <img src={discover} alt="" className="h-7 w-7" />
-          <p className="text-lg mt-1">Discover</p>
-        </div>
-        </NavLink>
+      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white  flex justify-around z-50 h-22">
+  <NavLink
+    to="/"
+    className={({ isActive }) =>
+      isActive
+        ? "flex items-center flex-col justify-center p-2 w-full bg-red-500 transition cursor-pointer"
+        : "flex items-center flex-col justify-center p-2 w-full hover:bg-red-500 transition cursor-pointer"
+    }
+  >
+    <img src={home1} alt="" className="h-7 w-7" />
+    <p className="text-lg mt-1">Home</p>
+  </NavLink>
 
-        <NavLink to="/album">
-        <div className="flex items-center flex-col">
-          <img src={album} alt="" className="h-7 w-7" />
-          <p className="text-lg mt-1">Album</p>
-        </div>
-        </NavLink>
+  <NavLink
+    to="/discover"
+    className={({ isActive }) =>
+      isActive
+        ? "flex items-center flex-col justify-center p-2 w-full bg-red-500 transition cursor-pointer"
+        : "flex items-center flex-col justify-center p-2 w-full hover:bg-red-500 transition cursor-pointer"
+    }
+  >
+    <img src={discover} alt="" className="h-7 w-7" />
+    <p className="text-lg mt-1">Discover</p>
+  </NavLink>
 
-        <NavLink to="/library">
-        <div className="flex items-center flex-col">
-          <img src={library} alt="" className="h-7 w-7" />
-          <p className="text-lg mt-1">Library</p>
-        </div>
-        </NavLink>
-      </div>
+  <NavLink
+    to="/album"
+    className={({ isActive }) =>
+      isActive
+        ? "flex items-center flex-col justify-center p-2 w-full bg-red-500 transition cursor-pointer"
+        : "flex items-center flex-col justify-center p-2 w-full hover:bg-red-500 transition cursor-pointer"
+    }
+  >
+    <img src={album} alt="" className="h-7 w-7" />
+    <p className="text-lg mt-1">Album</p>
+  </NavLink>
+
+  <NavLink
+    to="/library"
+    className={({ isActive }) =>
+      isActive
+        ? "flex items-center flex-col justify-center p-2 w-full bg-red-500 transition cursor-pointer"
+        : "flex items-center flex-col justify-center p-2 w-full hover:bg-red-500 transition cursor-pointer"
+    }
+  >
+    <img src={library} alt="" className="h-7 w-7" />
+    <p className="text-lg mt-1">Library</p>
+  </NavLink>
+</div>
+
     </>
   );
 };

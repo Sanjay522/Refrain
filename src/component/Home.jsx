@@ -10,9 +10,14 @@ import Album from "./Album";
 import CircleButton from "./button/CircleButton";
 import Footer from "./Footer";
 import SectionHeader from "./SectionHeader";
+import { useData } from "./Context";
+import example from "../assets/example.png"
+
 
 const Home = () => {
   const [tracks, setTracks] = useState([]);
+   const {data}= useData()
+   console.log(data)
 
   //   useEffect(() => {
   //     fetch(`https://api.jamendo.com/v3.0/tracks/?client_id=be30ae2e&format=json&limit=10`)
@@ -32,55 +37,53 @@ const Home = () => {
 
   return (
     <div className="flex flex-col lg:flex-row  sm:px-10 overflow-x-hidden">
-
       <div className="w-full">
         <Hero />
 
-
         <SectionHeader title="Weekly Top Songs">
-  <Song />
-  <Song />
-  <Song />
-  <CircleButton />
-</SectionHeader>
+  {data.map((items,index) => (
+    <Song key={index} image={example} songname={items.song} artistname={items.artist} />
+  ))}
+      <CircleButton/>
 
-<SectionHeader title="New Release Songs">
-  <Song />
-  <Song />
-  <Song />
-  <CircleButton />
-</SectionHeader>
-
-<SectionHeader title="Trending Songs">
-  <div className="w-full">
-    <SongLine />
-    <SongLine />
-    <SongLine />
-  </div>
-</SectionHeader>
-
-<SectionHeader title="Top Artists">
-  <Artist />
-  <Artist />
-  <Artist />
-  <CircleButton />
-</SectionHeader>
-
-<SectionHeader title="Top Albums">
-  <Album />
-  <Album />
-  <Album />
-  <CircleButton />
-</SectionHeader>
-
-<SectionHeader title="Top Playlists">
-  <Playlist />
-  <Playlist />
-  <Playlist />
-  <CircleButton />
 </SectionHeader>
 
 
+        {/* <SectionHeader title="New Release Songs">
+          <Song />
+          <Song />
+          <Song />
+          <CircleButton />
+        </SectionHeader>
+
+        <SectionHeader title="Trending Songs">
+          <div className="w-full">
+            <SongLine />
+            <SongLine />
+            <SongLine />
+          </div>
+        </SectionHeader>
+
+        <SectionHeader title="Top Artists">
+          <Artist />
+          <Artist />
+          <Artist />
+          <CircleButton />
+        </SectionHeader>
+
+        <SectionHeader title="Top Albums">
+          <Album />
+          <Album />
+          <Album />
+          <CircleButton />
+        </SectionHeader>
+
+        <SectionHeader title="Top Playlists">
+          <Playlist />
+          <Playlist />
+          <Playlist />
+          <CircleButton />
+        </SectionHeader> */}
       </div>
     </div>
   );

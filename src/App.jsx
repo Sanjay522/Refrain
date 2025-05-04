@@ -19,12 +19,15 @@ import DetailPage from "./component/DetailPage";
 import SongLine from "./component/SongLine";
 import Mobileplayer from "./component/Mobileplayer";
 import AppRoutes from "./router/Router";
+import DataContext from "./component/Context";
+import DataProvider from "./component/Context";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+    <DataProvider>
     <BrowserRouter>
       <div className=" w-full  m-auto sm:mt-7 flex">
       <div className="fixed sm:top-0 left-0 bottom-22
@@ -42,6 +45,7 @@ function App() {
         
       </div>
       </BrowserRouter>
+      </DataProvider>
     </>
   );
 }

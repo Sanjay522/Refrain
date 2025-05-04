@@ -6,7 +6,7 @@ import SongLine from "../SongLine";
 
 const AlbumPage = () => {
   return (
-    <div className="flex  flex-col min-h-screen lg:flex-row sm:m-0 m-5 pr-1 sm:px-10">
+    <div className="flex  flex-col min-h-sc lg:flex-row sm:m-0 m-5 pr-1 sm:px-10">
       <div
         className="bg-gradient-to-r from-sky-400 
        via-sky-700  to-gray-800 w-full rounded-lg "
@@ -25,12 +25,13 @@ const AlbumPage = () => {
               </div>
             </div>
           </div>
-          <div className="absolute right-0">
-          <PlayAll />
-          </div>
+          <div className="absolute left-0 top-45 sm:left-auto sm:right-20">
+  <PlayAll />
+</div>
+
         </div>
         <div className=" p-3 sm:py-5">
-          <SongLine />
+          <SongLine image={trending} songname="AJ" artistname="eminem" length="3:9" albumname="example" />
           <SongLine />
           <SongLine />
           <SongLine />

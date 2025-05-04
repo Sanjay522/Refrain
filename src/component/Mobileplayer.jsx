@@ -12,12 +12,12 @@ import queue from "../assets/player button/queue.svg";
 
 import dislike from "../assets/dislike.png";
 
-const Mobileplayer = () => {
+const Mobileplayer = ({image,songname,artistname}) => {
   return (
     <div className="sm:hidden relative h-screen w-full">
       <div className="absolute inset-0 bg-test blur-3xl z-0" />
       <div className="relative z-10 mt-25 flex flex-col items-center w-80 mx-auto">
-        <img src={example} className="h-80 w-80" alt="example" />
+        <img src={image} className="h-80 w-80" alt="example" />
         <div className="w-80 flex bg-red-400 rounded-xl h-10  p-[3px] mt-5 justify-center items-center">
           <div className="flex space-x-5 justify-center items-center w-38.5 ">
             <img src={music} className="h-6 w-6" alt="" />
@@ -30,8 +30,8 @@ const Mobileplayer = () => {
         </div>
         <div className="flex justify-between w-80 items-center mt-22">
             <div>
-                <h1 className="text-2xl">Song Name</h1>
-                <p className="text-lg">Artist Name</p>
+                <h1 className="text-2xl">{songname}</h1>
+                <p className="text-lg">{artistname}</p>
             </div>
             <img src={dislike} className="h-12 w-12" alt="" />
         </div>
