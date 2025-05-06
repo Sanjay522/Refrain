@@ -14,16 +14,16 @@ import dislike from "../assets/dislike.png";
 
 
 
-const Player = () => {
+const Player = ({image,songname,artistname,length}) => {
   return (
     <>
     <div className=' sm:h-20 flex h-15 bg-black sm:flex p-3 
     justify-between items-center w-full sm:px-5 py-1 '>
       <div className='flex  items-center space-x-7 '>
-        <img src={example} className='sm:h-12 h-15' alt="" />
+        <img src={image} className='sm:h-12 h-15' alt="" />
         <div>
-          <h1 className='text-sm sm:text-lg font-semibold'>Lo man liya</h1>
-          <p className='text-xs sm:text-sm'>singer name</p>
+          <h1 className='text-sm sm:text-lg font-semibold'>{songname}</h1>
+          <p className='text-xs sm:text-sm'>{artistname}</p>
         </div>
         <button><img src={dislike} className='hidden sm:block sm:h-8 sm:w-8' alt="" /></button>
       </div>
@@ -39,11 +39,11 @@ const Player = () => {
         </div>
         
         <div className='hidden sm:flex justify-between sm:items-center sm:space-x-2'>
-          <p className='sm:block hidden'>2:33</p>
+          <p className='sm:block hidden'>0:00</p>
           <div className=' sm:w-[500px] bg-red-300 sm:h-1 h-1 rounded-full'>
             <p className='h-1 bg-red-500 w-[100px] rounded-full'></p>
           </div>
-          <p className='sm:block hidden'>5:00</p>
+          <p className='sm:block hidden'>{length}</p>
         </div>
       </div>
       <p className='text-red-500 text-5xl sm:hidden'>

@@ -12,12 +12,39 @@ import Footer from "./Footer";
 import SectionHeader from "./SectionHeader";
 import { useData } from "./Context";
 import example from "../assets/example.png"
+import { Navigate, useNavigate } from "react-router-dom";
+import ListDetailPage from "./pages/ListDetailPage";
 
 
 const Home = () => {
   const [tracks, setTracks] = useState([]);
-   const {data}= useData()
-   console.log(data)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const navigate  = useNavigate()
+
+   const {data,desktop,mobile,setDesktop,setMobile}= useData()
+   console.log(desktop)
+
+  //  function haldleOnclick() {
+  //   setDesktop(data)
+  //   navigate("/listdetailpage",{state:{data}})
+    
+  //  }
+
+   
+   useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  //  const desktop = data.slice(0,5)
+  //  const moblie = data.slice(0,3)
+
+
+
 
   //   useEffect(() => {
   //     fetch(`https://api.jamendo.com/v3.0/tracks/?client_id=be30ae2e&format=json&limit=10`)
@@ -41,10 +68,21 @@ const Home = () => {
         <Hero />
 
         <SectionHeader title="Weekly Top Songs">
-  {data.map((items,index) => (
+          {/* <ListDetailPage title="Weekly Top Songs"> */}
+          {window.innerWidth >=900 ? (desktop && desktop.map((items,index) => (
     <Song key={index} image={example} songname={items.song} artistname={items.artist} />
-  ))}
-      <CircleButton/>
+  ))):(mobile && mobile.map((items,index) => (
+    <Song key={index} image={example} songname={items.song} artistname={items.artist} />
+  ))) }
+  
+      <CircleButton  onClick={() => navigate("/listdetailpage", {
+    state: {
+      title: "song",
+      items: desktop, 
+      type: "artist"
+    }
+  })} />
+      {/* </ListDetailPage> */}
 
 </SectionHeader>
 

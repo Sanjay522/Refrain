@@ -1,7 +1,6 @@
 import React from "react";
 import PlayAll from "../button/PlayAll";
 import SongLine from "../SongLine";
-import { NavLink } from "react-router-dom";
 
 const Favorite = () => {
   return (
