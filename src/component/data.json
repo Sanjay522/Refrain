@@ -1,212 +1,191 @@
-{"songs":[
+{
+  "songs": [
     {
       "song": "Shape of You",
-      "songImage": "https://link-to-image.com/shape-of-you.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96",
       "songLength": "3:54",
       "playlist": "Top Hits 2025",
-      "playlistImage": "https://link-to-image.com/top-hits.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e",
       "artist": "Ed Sheeran",
       "releaseDate": "2017-01-06",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Blinding Lights",
-      "songImage": "https://link-to-image.com/blinding-lights.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
       "songLength": "3:20",
       "playlist": "Chill Vibes",
-      "playlistImage": "https://link-to-image.com/chill-vibes.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003bd0e19e810bb4b55ab164a95",
       "artist": "The Weeknd",
       "releaseDate": "2019-11-29",
       "genre": "R&B",
-      "genreImage": "https://link-to-image.com/rnb.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f00000003e8b6d16cc0bf4008d4b89feb"
     },
     {
       "song": "Levitating",
-      "songImage": "https://link-to-image.com/levitating.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
       "songLength": "3:23",
       "playlist": "Dance Party",
-      "playlistImage": "https://link-to-image.com/dance-party.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003dc80fb5e23aa87294d5aeb38",
       "artist": "Dua Lipa",
       "releaseDate": "2020-03-27",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Good 4 U",
-      "songImage": "https://link-to-image.com/good-4-u.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a",
       "songLength": "2:58",
       "playlist": "Rock Classics",
-      "playlistImage": "https://link-to-image.com/rock-classics.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003c414e7daf34690c9f983f76e",
       "artist": "Olivia Rodrigo",
       "releaseDate": "2021-05-14",
       "genre": "Pop-Punk",
-      "genreImage": "https://link-to-image.com/pop-punk.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f0000000318e20d8d2bc7aa007d305e57"
     },
     {
       "song": "Peaches",
-      "songImage": "https://link-to-image.com/peaches.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273e6f407c7f3a0ec98845e4431",
       "songLength": "3:18",
       "playlist": "Summer Vibes",
-      "playlistImage": "https://link-to-image.com/summer-vibes.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003c8c5c4ded88596e6c081e5da",
       "artist": "Justin Bieber",
       "releaseDate": "2021-03-19",
       "genre": "R&B",
-      "genreImage": "https://link-to-image.com/rnb.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f00000003e8b6d16cc0bf4008d4b89feb"
     },
     {
       "song": "Watermelon Sugar",
-      "songImage": "https://link-to-image.com/watermelon-sugar.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f",
       "songLength": "2:54",
       "playlist": "Pop Hits 2025",
-      "playlistImage": "https://link-to-image.com/pop-hits-2025.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003c414e7daf34690c9f983f76e",
       "artist": "Harry Styles",
       "releaseDate": "2019-11-16",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Industry Baby",
-      "songImage": "https://link-to-image.com/industry-baby.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273ba26678947112dff3c3158bf",
       "songLength": "3:32",
       "playlist": "Rap Favorites",
-      "playlistImage": "https://link-to-image.com/rap-favorites.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f000000035dc37e8bae5d67e9398d175d",
       "artist": "Lil Nas X",
       "releaseDate": "2021-07-23",
       "genre": "Hip-Hop",
-      "genreImage": "https://link-to-image.com/hip-hop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f00000003d8fc2ba39546da5d6d5cbc5e"
     },
     {
       "song": "Save Your Tears",
-      "songImage": "https://link-to-image.com/save-your-tears.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
       "songLength": "3:35",
       "playlist": "Chill Beats",
-      "playlistImage": "https://link-to-image.com/chill-beats.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003bd0e19e810bb4b55ab164a95",
       "artist": "The Weeknd",
       "releaseDate": "2020-08-09",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Kiss Me More",
-      "songImage": "https://link-to-image.com/kiss-me-more.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273908280d9807127e185b71d56",
       "songLength": "3:29",
       "playlist": "Summer Beats",
-      "playlistImage": "https://link-to-image.com/summer-beats.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003c8c5c4ded88596e6c081e5da",
       "artist": "Doja Cat",
       "releaseDate": "2021-04-09",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Montero",
-      "songImage": "https://link-to-image.com/montero.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273be82673b5f79d9658ec0a9fd",
       "songLength": "2:18",
       "playlist": "Top Charting Songs",
-      "playlistImage": "https://link-to-image.com/top-charting.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003d8fc2ba39546da5d6d5cbc5e",
       "artist": "Lil Nas X",
       "releaseDate": "2021-03-26",
       "genre": "Hip-Hop",
-      "genreImage": "https://link-to-image.com/hip-hop.jpg"
-    },
-    {
-      "song": "Blinding Lights",
-      "songImage": "https://link-to-image.com/blinding-lights.jpg",
-      "songLength": "3:22",
-      "playlist": "Chill Vibes",
-      "playlistImage": "https://link-to-image.com/chill-vibes.jpg",
-      "artist": "The Weeknd",
-      "releaseDate": "2019-11-29",
-      "genre": "R&B",
-      "genreImage": "https://link-to-image.com/rnb.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f00000003d8fc2ba39546da5d6d5cbc5e"
     },
     {
       "song": "Take My Breath",
-      "songImage": "https://link-to-image.com/take-my-breath.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b2730028e2c761fc796a5602ffea",
       "songLength": "3:41",
       "playlist": "Night Drive",
-      "playlistImage": "https://link-to-image.com/night-drive.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003e264e0d5746e963239d9df83",
       "artist": "The Weeknd",
       "releaseDate": "2021-08-06",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Shivers",
-      "songImage": "https://link-to-image.com/shivers.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273ef24c3fdbf856340d55cfeb2",
       "songLength": "3:27",
       "playlist": "Autumn Vibes",
-      "playlistImage": "https://link-to-image.com/autumn-vibes.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003ca5a7517156021292e5663a6",
       "artist": "Ed Sheeran",
       "releaseDate": "2021-09-10",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
-    },
-    {
-      "song": "Good 4 U",
-      "songImage": "https://link-to-image.com/good-4-u.jpg",
-      "songLength": "2:58",
-      "playlist": "Pop Hits 2025",
-      "playlistImage": "https://link-to-image.com/pop-hits-2025.jpg",
-      "artist": "Olivia Rodrigo",
-      "releaseDate": "2021-05-14",
-      "genre": "Pop-Punk",
-      "genreImage": "https://link-to-image.com/pop-punk.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Cold Heart",
-      "songImage": "https://link-to-image.com/cold-heart.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b2731b5689a9990b3ed19fb202b2",
       "songLength": "3:22",
       "playlist": "Pop Classics",
-      "playlistImage": "https://link-to-image.com/pop-classics.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003c414e7daf34690c9f983f76e",
       "artist": "Elton John & Dua Lipa",
       "releaseDate": "2021-08-13",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Lost Cause",
-      "songImage": "https://link-to-image.com/lost-cause.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273c79b600289a75f6c74ffb2ad",
       "songLength": "4:03",
       "playlist": "Sad Songs",
-      "playlistImage": "https://link-to-image.com/sad-songs.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f000000036eec5c8e7a0c91abe25585a6",
       "artist": "Billie Eilish",
       "releaseDate": "2021-06-02",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Butter",
-      "songImage": "https://link-to-image.com/butter.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273acff28ea3c2258d88980e01a",
       "songLength": "2:44",
       "playlist": "BTS Hits",
-      "playlistImage": "https://link-to-image.com/bts-hits.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003d0fb0d4e1befe688060ac333",
       "artist": "BTS",
       "releaseDate": "2021-05-21",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     },
     {
       "song": "Leave The Door Open",
-      "songImage": "https://link-to-image.com/leave-the-door-open.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b273ee0f38d6b68f65686f2805d1",
       "songLength": "4:02",
       "playlist": "Slow Jams",
-      "playlistImage": "https://link-to-image.com/slow-jams.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f00000003cbd3e872364b03a37d107a77",
       "artist": "Silk Sonic",
       "releaseDate": "2021-03-05",
       "genre": "R&B",
-      "genreImage": "https://link-to-image.com/rnb.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f00000003e8b6d16cc0bf4008d4b89feb"
     },
     {
       "song": "Positions",
-      "songImage": "https://link-to-image.com/positions.jpg",
+      "songImage": "https://i.scdn.co/image/ab67616d0000b2735ef878a782c987d38d82b605",
       "songLength": "2:52",
       "playlist": "Pop Hits 2025",
-      "playlistImage": "https://link-to-image.com/pop-hits-2025.jpg",
+      "playlistImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e",
       "artist": "Ariana Grande",
       "releaseDate": "2020-10-23",
       "genre": "Pop",
-      "genreImage": "https://link-to-image.com/pop.jpg"
+      "genreImage": "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e"
     }
   ]
 }
