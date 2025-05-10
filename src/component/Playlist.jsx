@@ -7,7 +7,7 @@ const Playlist = ({ image,playlistname }) => {
     sm:w-50  sm:my-4 py-2 my-5 
     hover:bg-[#2e2d2d] rounded-sm sm:justify-center sm:items-start'>
       <div>
-        <img className='h-26 sm:h-32' src={Image} alt="" />
+        <img className='h-26 sm:h-32' src={image} alt="" />
         <h1 className='py-1 text-sm sm:py-1 sm:text-3xl'>{playlistname}</h1>
       </div>
     </div>

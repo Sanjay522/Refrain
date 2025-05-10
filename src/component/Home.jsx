@@ -21,7 +21,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const { data, desktop, mobile, setDesktop, setMobile } = useData();
-  //  console.log(desktop)
+   console.log(desktop)
 
   function haldleOnclick() {
     setDesktop(data);
@@ -61,7 +61,17 @@ const Home = () => {
       <div className="w-full">
         <Hero />
 
-        <SectionHeader title="Weekly Top Songs">
+        <SectionHeader title="Weekly Top Songs" 
+            onClick={() =>
+              navigate("/listdetailpage", {
+                state: {
+                  title: "Weekly Top Songs",
+                  items: desktop,
+                  type: "song",
+                },
+              })
+            }
+            >
           {window.innerWidth >= 900
             ? desktop &&
               desktop.map((items, index) => (
@@ -95,7 +105,17 @@ const Home = () => {
           />
         </SectionHeader>
 
-        <SectionHeader title="New Release Songs">
+        <SectionHeader title="New Release Songs" 
+        onClick={() =>
+          navigate("/listdetailpage", {
+            state: {
+              title: "Weekly Top Songs",
+              items: desktop,
+              type: "new release song",
+            },
+          })
+        }
+        >
         {window.innerWidth >= 900
             ? desktop &&
               desktop.map((items, index) => (
@@ -129,18 +149,28 @@ const Home = () => {
           />
         </SectionHeader>
 
-        <SectionHeader title="Trending Songs">
+        <SectionHeader title="Trending Songs" 
+        onClick={() =>
+          navigate("/listdetailpage", {
+            state: {
+              title: "Weekly Top Songs",
+              items: desktop,
+              type: "trending",
+            },
+          })
+        }>
+
           <div className="w-full">
           {window.innerWidth >= 900
             ? desktop &&
               desktop.map((items, index) => (
-                <SongLine index={index} image={items.songImage} songname={items.song} 
+                <SongLine index={index +1 } image={items.songImage} songname={items.song} 
                 artistname={items.artist} releasedate={items.releaseDate} 
                 albumname={items.playlist} length={items.songLength} />
               ))
             : mobile &&
               mobile.map((items, index) => (
-<SongLine index={index} image={items.songImage} songname={items.song} 
+<SongLine index={index +1} image={items.songImage} songname={items.song} 
                 artistname={items.artist} releasedate={items.releaseDate} 
                 albumname={items.playlist} length={items.songLength} />              ))}
 
@@ -150,7 +180,7 @@ const Home = () => {
                 state: {
                   title: "New Release Songs",
                   items: desktop,
-                  type: "trending ",
+                  type: "trending",
                 },
               })
             }
@@ -158,25 +188,115 @@ const Home = () => {
           </div>
         </SectionHeader>
 
-        <SectionHeader title="Top Artists">
-          <Artist />
-          <Artist />
-          <Artist />
-          <CircleButton />
+        <SectionHeader title="Top artist" 
+        onClick={() =>
+          navigate("/listdetailpage", {
+            state: {
+              title: "Weekly Top Songs",
+              items: desktop,
+              type: "Top artist",
+            },
+          })
+        }
+        >
+          <div className=" flex  space-x-5 justify-between items-center">
+          {window.innerWidth >= 900
+            ? desktop &&
+              desktop.map((items, index) => (
+                <Artist artistname={items.artist} image={items.artistImage}   />
+              ))
+            : mobile &&
+              mobile.map((items, index) => (
+                <Artist artistname={items.artist} image={items.artistImage}   />
+            ))}
+
+          <CircleButton
+            onClick={() =>
+              navigate("/listdetailpage", {
+                state: {
+                  title: "Top artist",
+                  items: desktop,
+                  type: "Top artist",
+                },
+              })
+            }
+          />
+          </div>
         </SectionHeader>
 
-        <SectionHeader title="Top Albums">
-          <Album />
-          <Album />
-          <Album />
-          <CircleButton />
+
+
+
+        <SectionHeader title="Top Albums"
+        onClick={() =>
+          navigate("/listdetailpage", {
+            state: {
+              title: "Weekly Top Songs",
+              items: desktop,
+              type: "Top album",
+            },
+          })
+        }
+        >
+        {window.innerWidth >= 900
+            ? desktop &&
+              desktop.map((items, index) => (
+                <Album artistname={items.artist} songname={items.song} image={items.playlistImage}/>
+              ))
+            : mobile &&
+              mobile.map((items, index) => (
+                <Album artistname={items.artist} songname={items.song} image={items.playlistImage}/>
+
+              ))}
+
+          <CircleButton
+            onClick={() =>
+              navigate("/listdetailpage", {
+                state: {
+                  title: "New Release Songs",
+                  items: desktop,
+                  type: "Top album",
+                },
+              })
+            }
+          />
         </SectionHeader>
 
-        <SectionHeader title="Top Playlists">
-          <Playlist />
-          <Playlist />
-          <Playlist />
-          <CircleButton />
+
+
+        <SectionHeader title="Top Playlist" 
+        onClick={() =>
+          navigate("/listdetailpage", {
+            state: {
+              title: "Weekly Top Songs",
+              items: desktop,
+              type: "Top playlist",
+            },
+          })
+        }
+        >
+        {window.innerWidth >= 900
+            ? desktop &&
+              desktop.map((items, index) => (
+                <Playlist playlistname={items.playlist} image={items.playlistImage} />
+              ))
+            : mobile &&
+              mobile.map((items, index) => (
+                <Playlist playlistname={items.playlist} image={items.playlistImage} />
+
+              ))}
+
+          <CircleButton
+            onClick={() =>
+              navigate("/listdetailpage", {
+                state: {
+                  title: "New Release Songs",
+                  items: desktop,
+                  type: "Top playlist",
+                },
+              })
+            }
+          />
         </SectionHeader>
       </div>
     </div>
